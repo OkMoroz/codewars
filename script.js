@@ -186,3 +186,31 @@ function popElement(arr) {
   arr.pop();
   return arr;
 }
+
+// Task #5
+// Give you a function animal, accept 1 parameter:obj like this:
+
+// {name:"dog",legs:4,color:"white"}
+// and return a string like this:
+
+// "This white dog has 4 legs."
+// When you have finished the work, click "Run Tests" to see if your code is working properly.
+
+function animal(obj) {
+  const message = `This ${obj.color} ${obj.name} has ${obj.legs} legs.`;
+  return message;
+}
+
+const objAnimals = { name: 'dog', legs: 4, color: 'white' };
+const result = animal(objAnimals);
+console.log(result);
+
+// function animal(obj){
+//   const { color, legs, name } = obj;
+
+//   return `This ${color} ${name} has ${legs} legs.`;
+// }
+
+// const objAnimals = { name: "dog", legs: 4, color: "white" };
+// const result = animal(objAnimals);
+// console.log(result);

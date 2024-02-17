@@ -189,10 +189,8 @@ function popElement(arr) {
 
 // Task #5
 // Give you a function animal, accept 1 parameter:obj like this:
-
 // {name:"dog",legs:4,color:"white"}
 // and return a string like this:
-
 // "This white dog has 4 legs."
 // When you have finished the work, click "Run Tests" to see if your code is working properly.
 
@@ -214,3 +212,35 @@ console.log(result);
 // const objAnimals = { name: "dog", legs: 4, color: "white" };
 // const result = animal(objAnimals);
 // console.log(result);
+
+// Task #6
+// Coding in function trueOrFalse, function accept 1 parameters:val, try to use the conditional statement if...else, if val value is false (val==false or it can convert to false), should return a string "false", if not, return a string "true".
+
+// When you have finished the work, click "Run Tests" to see if your code is working properly.
+function trueOrFalse(val) {
+  if (
+    val === false ||
+    val === null ||
+    val === undefined ||
+    val === NaN ||
+    val === 0 ||
+    val === -0 ||
+    val === ''
+  ) {
+    return 'false';
+  } else {
+    return 'true';
+  }
+}
+
+// Task #7
+// Complete function saleHotdogs/SaleHotDogs/sale_hotdogs, function accepts 1 parameter:n, n is the number of hotdogs a customer will buy, different numbers have different prices (refer to the following table), return how much money will the customer spend to buy that number of hotdogs.
+
+// number of hotdogs	price per unit (cents)
+// n < 5	100
+// n >= 5 and n < 10	95
+// n >= 10	90
+// You can use if..else or ternary operator to complete it.
+function saleHotdogs(n) {
+  return n < 5 ? n * 100 : n >= 5 && n < 10 ? n * 95 : n * 90;
+}
